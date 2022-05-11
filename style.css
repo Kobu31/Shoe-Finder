@@ -22,39 +22,119 @@
 
 
 
-.grid-popus{
-  display: grid;
-  grid-template-columns:  repeat(3, 1fr) ;
-  padding: 45px;
-  column-gap: 0px;
-}
 
-.contPopu{
-  display: flex;
-  justify-content: center;
-  width: 300px;
- 
-  margin: auto;
-}
 
-.img-fluid{
-  width: 100%;
-  border-radius: 5%;
+
+@font-face {
+  font-family:"urbano";
+  src: url(Fuentes/Urban\ Black.otf);
 }
 
 
 
+@media screen and (max-width: 525px) {
+  .titulo{
+    font-style: Stencil Std, fantasy;
+    font-size: 30px;
+  text-align: center;
+  grid-area: titulo;
+  padding: 15px;
+  font-family: "urbano";
+  }
+  .textoUbi{
+    grid-area: textoUbi;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+  }
+  .ubicacion{
+    grid-area: ubicacion;
+   display: flex;
+   justify-content: center;
+   width: 525px;
+   
+   
+  }
+  .grid-popus{
+    display: grid;
+    grid-template-columns:  repeat(1, 1fr) ;
+    padding: 20px;
+    column-gap: 0px;
+  }
+  
+  .contPopu{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    
+    
+   
+    margin: auto;
+  }
+  
+  .img-fluid{
+    width: 100%;
+    border-radius: 5%;
+  }
+  .cajaT:hover{
+   transform: scale(1.1);
+   transition: .7s;
+  }
+
+  
+}
+
+@media screen and (min-width: 526px)  {
+  .titulo{
+    font-style: Stencil Std, fantasy;
+    font-size: 50px;
+  text-align: center;
+  grid-area: titulo;
+  padding: 15px;
+  font-family: "urbano";
+  }
+  .textoUbi{
+    grid-area: textoUbi;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+  }
+  .ubicacion{
+    grid-area: ubicacion;
+   display: flex;
+   justify-content: center;
+  }
+  .grid-popus{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr) ;
+    padding: 45px;
+    column-gap: 0px;
+  }
+  
+  .contPopu{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+   
+    margin: auto;
+  }
+  
+  .img-fluid{
+    width: 100%;
+    border-radius: 5%;
+  }
+  .cajaT:hover{
+   transform: scale(1.1);
+   transition: .7s;
+  }
+}
 
 
 
 
 
-
-
-
-.cajaT:hover{
- transform: scale(1.1);
- transition: .7s;
+.textoUbi{
+  font-family: "urbano";
 }
 
 .footer-basic {
@@ -134,27 +214,11 @@
 .fondo{
   background-color: azure;
 }
-.titulo{
-  font-style: Stencil Std, fantasy;
-  font-size: 50px;
-text-align: center;
-grid-area: titulo;
-padding: 15px;
-}
-.ubicacion{
-  grid-area: ubicacion;
- display: flex;
- justify-content: center;
- 
-}
 
 
-.textoUbi{
-  grid-area: textoUbi;
-  font-size: 30px;
-  text-align: center;
-  padding: 30px;
-}
+
+
+
 
 
 
