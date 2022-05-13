@@ -1,0 +1,38 @@
+@import '../general/listas';
+.grid-ubiacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 1fr;
+    grid-template-areas:
+        "titulo"
+        "ubicacion"
+        "textoUbi"
+    ;
+
+    .titulo {
+        font-family: "urbano";
+        font-style: Stencil Std, fantasy;
+        font-size: nth($font-size, 3);
+        text-align: center;
+        grid-area: titulo;
+        padding: 15px;
+        
+
+    }
+
+    .ubicacion {
+        grid-area: ubicacion;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .textoUbi {
+        font-size: nth($font-size, 2);
+        grid-area: textoUbi;
+        text-align: center;
+        padding: 30px;
+        font-family: "urbano";
+    }
+
+}
