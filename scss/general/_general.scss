@@ -1,4 +1,10 @@
+@import'../general/variables';
+
+
 *{
     padding: 0px;
     margin: 0px;
+}
+body{
+    background-color: $fondo;
 }

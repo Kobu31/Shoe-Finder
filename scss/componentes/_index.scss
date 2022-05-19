@@ -1,3 +1,5 @@
+@import '../general/variables';
+
 .grid-popus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -28,3 +30,5 @@
 .carousel-item{
     transition: transform 2s ease, opacity .5s ease-out
   }
+
+ 

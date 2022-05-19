@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+body {
+  background-color: #F9F9F9;
+}
+
 .grid-ubiacion {
   display: grid;
   grid-template-columns: 1fr;
