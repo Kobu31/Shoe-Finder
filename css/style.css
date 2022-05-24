@@ -7,26 +7,26 @@ body {
   background-color: #F9F9F9;
 }
 
-.grid-ubiacion {
+.grid-ubicacion {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 3fr 1fr;
-  grid-template-areas: "titulo" "ubicacion" "textoUbi";
+  grid-template-areas: "tituloxd" "ubicacion" "textoUbi";
 }
-.grid-ubiacion .titulo {
+.grid-ubicacion .titulo {
   font-family: "urbano";
   font-style: Stencil Std, fantasy;
   font-size: 30px;
   text-align: center;
-  grid-area: titulo;
+  grid-area: tituloxd;
   padding: 15px;
 }
-.grid-ubiacion .ubicacion {
+.grid-ubicacion .ubicacion {
   grid-area: ubicacion;
   display: flex;
   justify-content: center;
 }
-.grid-ubiacion .textoUbi {
+.grid-ubicacion .textoUbi {
   font-size: 22px;
   grid-area: textoUbi;
   text-align: center;

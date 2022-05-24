@@ -1,10 +1,12 @@
 @import '../general/listas';
-.grid-ubiacion {
+
+
+.grid-ubicacion {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas:
-        "titulo"
+        "tituloxd"
         "ubicacion"
         "textoUbi"
     ;
@@ -14,7 +16,7 @@
         font-style: Stencil Std, fantasy;
         font-size: nth($font-size, 3);
         text-align: center;
-        grid-area: titulo;
+        grid-area: tituloxd;
         padding: 15px;
         
 
