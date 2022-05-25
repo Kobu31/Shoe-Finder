@@ -120,4 +120,17 @@ body {
   margin-bottom: 0;
 }
 
+.container-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.container-productos .img-container {
+  display: flex;
+  justify-content: center;
+}
+.container-productos .img-container .img-productos {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

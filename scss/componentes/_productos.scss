@@ -1,0 +1,17 @@
+
+
+
+
+.container-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    .img-container{
+        display: flex;
+        justify-content: center;
+        .img-productos{
+            width: 100%;
+        }
+    }
+
+}
