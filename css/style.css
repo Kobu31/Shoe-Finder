@@ -122,12 +122,17 @@ body {
 
 .container-productos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, 320px);
   grid-template-rows: auto;
+  padding-inline: 2rem;
+  justify-content: space-evenly;
+  margin: auto;
+  grid-gap: 2rem;
+  padding-top: 25px;
 }
 .container-productos .img-container {
-  display: flex;
-  justify-content: center;
+  flex: 0 1 320px;
+  border: 2px solid black;
 }
 .container-productos .img-container .img-productos {
   width: 100%;
