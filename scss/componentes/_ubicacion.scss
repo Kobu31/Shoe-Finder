@@ -1,4 +1,5 @@
 @import '../general/listas';
+@import '../general/variables';
 
 
 .grid-ubicacion {
@@ -11,21 +12,22 @@
         "textoUbi"
     ;
 
-    .titulo {
+   .titulo {
         font-family: "urbano";
         font-style: Stencil Std, fantasy;
         font-size: nth($font-size, 3);
         text-align: center;
         grid-area: tituloxd;
         padding: 15px;
-        
-
     }
 
     .ubicacion {
         grid-area: ubicacion;
         display: flex;
         justify-content: center;
+         .oki{
+            border: $border-size-color;
+         }
 
     }
 
@@ -35,6 +37,7 @@
         text-align: center;
         padding: 30px;
         font-family: "urbano";
+        
     }
 
 }
