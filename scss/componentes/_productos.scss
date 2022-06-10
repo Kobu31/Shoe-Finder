@@ -16,7 +16,10 @@
 
     .img-container{
         flex: 0 1 320px;
-        
+        &:hover{
+            transform: scale(1.05);
+            transition: .7s;
+           }
         
         border: 2px solid black;
         .img-productos{

@@ -14,8 +14,8 @@
 
    .titulo {
      
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Permanent Marker', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
         font-size: nth($font-size, 3);
         text-align: center;
         grid-area: tituloxd;
@@ -37,8 +37,8 @@
         grid-area: textoUbi;
         text-align: center;
         padding: 30px;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
         
     }
 

@@ -27,19 +27,30 @@
     border: solid black 2px;
    }
    .textonovedades{
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Permanent Marker', cursive;
-    background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+   
+    background: linear-gradient(0deg, rgb(143, 132, 214), rgb(143, 132, 214)) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     --bg-h: 100%;
-  
+    color: black;
+    text-decoration: none;
+
+    :visited{
+      color:black;
+    }
+    
+
   }
+  
  
   .textonovedades:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
     color: white;
+    text-decoration: none;
   }
+  
   
 }
 

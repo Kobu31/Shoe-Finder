@@ -14,8 +14,8 @@ body {
   grid-template-areas: "tituloxd" "ubicacion" "textoUbi";
 }
 .grid-ubicacion .titulo {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   text-align: center;
   grid-area: tituloxd;
@@ -34,8 +34,8 @@ body {
   grid-area: textoUbi;
   text-align: center;
   padding: 30px;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
 }
 
 .grid-popus {
@@ -138,6 +138,10 @@ body {
   flex: 0 1 320px;
   border: 2px solid black;
 }
+.container-productos .img-container:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
 .container-productos .img-container .img-productos {
   width: 100%;
 }
@@ -162,16 +166,22 @@ body {
   border: solid black 2px;
 }
 .grid-novedades .textonovedades {
-  font-family: "Open Sans", sans-serif;
-  font-family: "Permanent Marker", cursive;
-  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom/0 var(--bg-h);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  background: linear-gradient(0deg, rgb(143, 132, 214), rgb(143, 132, 214)) no-repeat right bottom/0 var(--bg-h);
   transition: background-size 350ms;
   --bg-h: 100%;
+  color: black;
+  text-decoration: none;
+}
+.grid-novedades .textonovedades :visited {
+  color: black;
 }
 .grid-novedades .textonovedades:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);
   background-position-x: left;
   color: white;
+  text-decoration: none;
 }
 
 .contenedorFaq {
@@ -183,21 +193,22 @@ body {
   .contenedorFaq .titulofaq {
     text-align: center;
     padding: 2rem;
-    font-family: "Open Sans", sans-serif;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
   }
   .contenedorFaq .h2faq {
     font-size: 24px;
     background-color: beige;
     padding: 0.5rem;
-    font-family: "Open Sans", sans-serif;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
     margin-left: 4rem;
     margin-right: 4rem;
   }
   .contenedorFaq .info {
     font-size: 18px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: bold;
     margin: 3rem;
     margin-left: 4rem;
     margin-right: 4rem;
