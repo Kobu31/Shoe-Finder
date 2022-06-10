@@ -13,8 +13,9 @@
     ;
 
    .titulo {
-        font-family: "urbano";
-        font-style: Stencil Std, fantasy;
+     
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Permanent Marker', cursive;
         font-size: nth($font-size, 3);
         text-align: center;
         grid-area: tituloxd;
@@ -36,7 +37,8 @@
         grid-area: textoUbi;
         text-align: center;
         padding: 30px;
-        font-family: "urbano";
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Permanent Marker', cursive;
         
     }
 

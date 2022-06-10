@@ -1,10 +1,46 @@
-@import'../general/listas';
+@import '../general/listas';
+@import '../general/variables';
 
+.contenedorFaq {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 
-.titulofaq{
-    .h2faq{
+   
+
+@media (min-width: 769px){
+    .titulofaq{
+        text-align: center;
+        padding: 2rem;
+        font-family: 'Open Sans', sans-serif;
+         font-family: 'Permanent Marker', cursive;
+     }
+
+    .h2faq {
         font-size: 24px;
-        background-color: $fondo;
+        background-color: beige;
+        padding: 0.5rem;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Permanent Marker', cursive;
+        
+        margin-left: 4rem;
+        margin-right: 4rem;
+        
     }
+
+    .info{
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        margin: 3rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+
+    }
+
+
 }
+}
+    
+
+
 

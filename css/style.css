@@ -14,8 +14,8 @@ body {
   grid-template-areas: "tituloxd" "ubicacion" "textoUbi";
 }
 .grid-ubicacion .titulo {
-  font-family: "urbano";
-  font-style: Stencil Std, fantasy;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Permanent Marker", cursive;
   font-size: 30px;
   text-align: center;
   grid-area: tituloxd;
@@ -34,7 +34,8 @@ body {
   grid-area: textoUbi;
   text-align: center;
   padding: 30px;
-  font-family: "urbano";
+  font-family: "Open Sans", sans-serif;
+  font-family: "Permanent Marker", cursive;
 }
 
 .grid-popus {
@@ -141,93 +142,66 @@ body {
   width: 100%;
 }
 
-.hovereffect {
+.banner-novedades {
   width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
+  padding: 1rem;
 }
 
-.hovereffect .overlay {
+.grid-novedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-rows: auto;
+  padding-inline: 2rem;
+  justify-content: space-evenly;
+  margin: auto;
+  grid-gap: 2rem;
+  padding-top: 25px;
+}
+.grid-novedades .img-novedades {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  background-color: rgba(75, 75, 75, 0.7);
-  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
-  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  border: solid black 2px;
+}
+.grid-novedades .textonovedades {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Permanent Marker", cursive;
+  background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom/0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+.grid-novedades .textonovedades:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+  color: white;
 }
 
-.hovereffect:hover .overlay {
-  background-color: rgba(48, 152, 157, 0.4);
+.contenedorFaq {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
-
-.hovereffect img {
-  display: block;
-  position: relative;
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(45px);
-  -ms-transform: translateY(45px);
-  transform: translateY(45px);
-  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
-  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
-}
-
-.hovereffect:hover h2 {
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-}
-
-.hovereffect a.info {
-  display: inline-block;
-  text-decoration: none;
-  padding: 7px 14px;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  background-color: transparent;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
-  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
-  font-weight: normal;
-  margin: -52px 0 0 0;
-  padding: 62px 100px;
-}
-
-.hovereffect:hover a.info {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px #fff;
-}
-
-.titulofaq .h2faq {
-  font-size: 24px;
-  background-color: #F9F9F9;
+@media (min-width: 769px) {
+  .contenedorFaq .titulofaq {
+    text-align: center;
+    padding: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Permanent Marker", cursive;
+  }
+  .contenedorFaq .h2faq {
+    font-size: 24px;
+    background-color: beige;
+    padding: 0.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Permanent Marker", cursive;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .contenedorFaq .info {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
